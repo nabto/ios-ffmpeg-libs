@@ -18,7 +18,8 @@ DESC
 
   s.source           = { :http => "https://downloads.nabto.com/assets/ios-ffmpeg-libs/0.0.1/ios-ffmpeg-libs.zip" }
 
-  s.source_files = "Libs", "Headers/libavfilter/*.h", "Headers/libswresample/*.h", "Headers/libavformat/*.h", "Headers/libavcodec/*.h", "Headers/libavdevice/*.h", "Headers/libavutil/*.h", "Headers/libswscale/*.h"
+  s.source_files = "Libs", "Headers/**/*.h"
+  s.header_mappings_dir = "Headers"
   s.public_header_files = "Headers/**/*.h"
   s.frameworks = "MediaPlayer", "CoreAudio", "AudioToolbox", "Accelerate", "QuartzCore", "OpenGLES"
   s.ios.libraries = "z", "iconv"
