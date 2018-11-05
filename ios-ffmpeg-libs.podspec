@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'ios-ffmpeg-libs'
   s.platform     = :ios, "11.0"
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.summary      = "Precompiled FFmpg libs for iOS"
   s.description  = <<-DESC
 Precompiled FFmpg libs to use e.g. with the https://github.com/kolyvan/kxmovie project. The KxMovie project includes only dated versions of the FFmpg libs which lack 64-bit simulator support and include various unsupported architectures for iOS11+.
@@ -16,9 +16,9 @@ DESC
   s.license      = "LGPL"
   s.author       = { "Nabto" => "apps@nabto.com" }
 
-  s.source           = { :http => "https://downloads.nabto.com/assets/ios-ffmpeg-libs/#{s.version}/ios-ffmpeg-libs.zip" }
+  s.source           = { :http => "https://downloads.nabto.com/assets/ios-ffmpeg-libs/0.0.1/ios-ffmpeg-libs.zip" }
 
-  s.source_files = "Libs", "Headers/**/*.h"
+  s.source_files = "Libs", "Headers/libavfilter/*.h", "Headers/libswresample/*.h", "Headers/libavformat/*.h", "Headers/libavcodec/*.h", "Headers/libavdevice/*.h", "Headers/libavutil/*.h", "Headers/libswscale/*.h"
   s.public_header_files = "Headers/**/*.h"
   s.frameworks = "MediaPlayer", "CoreAudio", "AudioToolbox", "Accelerate", "QuartzCore", "OpenGLES"
   s.ios.libraries = "z", "iconv"
