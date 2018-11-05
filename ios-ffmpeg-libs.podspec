@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'ios-ffmpeg-libs'
   s.platform     = :ios, "11.0"
-  s.version      = '1.0.0'
+  s.version      = '0.0.1'
   s.summary      = "Precompiled FFmpg libs for iOS"
   s.description  = <<-DESC
 Precompiled FFmpg libs to use e.g. with the https://github.com/kolyvan/kxmovie project. The KxMovie project includes only dated versions of the FFmpg libs which lack 64-bit simulator support and include various unsupported architectures for iOS11+.
